@@ -1,0 +1,23 @@
+[project]
+name = "pygments-ocl"
+description = "A Pygments plugin for OCL (Object Constraint Language)"
+readme = "README.md"
+license.text = "BSD"
+version = "0.1.1"
+authors = [
+    { name = "Pierre Beaujean", email = "pierre.beaujean@unamur.be" },
+    { name = "Jevon Wright (soundasleep)" },
+]
+maintainers = [
+    { name = "Pierre Beaujean", email = "pierre.beaujean@unamur.be" },
+]
+classifiers = [
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = ["pygments"]
+entry-points."pygments.lexers".ocl = "pygments_ocl:OCLLexer"
